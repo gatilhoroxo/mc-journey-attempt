@@ -361,9 +361,9 @@ Após completar o **Nível 2** aqui, siga para:
 - **[../i1-esp32/](../i1-esp32/)** - ESP32 com WiFi/Bluetooth e ESP-IDF
 
 Ou consulte:
-- **Roadmap geral:** [`../../learn/roadmap_geral.md`](../../learn/roadmap_geral.md)
-- **Referências:** [`../../REFERENCIAS.md`](../../REFERENCIAS.md)
-- **Voltar:** [`../README.md`](../README.md)
+- **Roadmap geral:** [`roadmap_geral.md`](../../docs/roadmaps/roadmap_geral.md)
+- **Referências:** [`REFERENCIAS.md`](../../docs/referencias/REFERENCIAS.md)
+- **Voltar:** [`README.md`](../README.md)
 
 ---
 

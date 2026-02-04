@@ -197,9 +197,9 @@ Após completar o **Nível 2** aqui, siga para:
 - **[../i2-rp2040-a/](../i2-rp2040-a/)** - RP2040 com PIO e dual-core ARM
 
 Ou consulte:
-- **Roadmap geral:** [`../../learn/roadmap_geral.md`](../../learn/roadmap_geral.md)
-- **Referências:** [`../../REFERENCIAS.md`](../../REFERENCIAS.md)
-- **Voltar:** [`../README.md`](../README.md)
+- **Roadmap geral:** [`roadmap_geral.md`](../../docs/roadmaps/roadmap_geral.md)
+- **Referências:** [`REFERENCIAS.md`](../../docs/referencias/REFERENCIAS.md)
+- **Voltar:** [`README.md`](../README.md)
 
 ---
 

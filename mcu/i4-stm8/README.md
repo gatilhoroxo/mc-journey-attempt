@@ -99,8 +99,9 @@ Após completar o **Nível 3** aqui:
 - Criar seus próprios projetos!
 
 Ou consulte:
-- **Roadmap geral:** [`../../learn/roadmap_geral.md`](../../learn/roadmap_geral.md)
-- **Voltar:** [`../README.md`](../README.md)
+- **Roadmap geral:** [`roadmap_geral.md`](../../docs/roadmaps/roadmap_geral.md)
+- **Referências:** [`REFERENCIAS.md`](../../docs/referencias/REFERENCIAS.md)
+- **Voltar:** [`README.md`](../README.md)
 
 ---
 

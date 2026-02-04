@@ -18,7 +18,6 @@ Código e projetos para cada microcontrolador.
 ```
 mcu/
 ├── README.md             # 👈 Navegação (você está aqui)
-├── readme.md             # Referências completas sobre MCUs
 ├── i0-arduino/           # Arduino (framework conhecido)
 │   └── README.md
 ├── i1-esp32/             # ESP32 (WiFi/Bluetooth, dual-core)
@@ -47,12 +46,10 @@ Cada pasta `iN-[mcu]/` contém:
 iN-mcu/
 ├── README.md              # Info + roadmap específico do MCU
 ├── j1-exercicios/         # Exercícios progressivos
-│   ├── README.md
 │   ├── nivel-1-basico/
 │   ├── nivel-2-intermediario/
 │   └── nivel-3-avancado/
 └── j2-projetos/           # Projetos completos
-    └── README.md
 ```
 
 ### Níveis de Exercícios
@@ -63,11 +60,11 @@ iN-mcu/
 
 ## 🔗 Links Relacionados
 
-- **Roadmap geral:** [`../learn/roadmap_geral.md`](../learn/roadmap_geral.md)
-- **Referências de MCUs:** [`readme.md`](readme.md)
-- **Projetos multi-MCU:** [`../projetos-integrados/`](../projetos-integrados/)
-- **Templates:** [`../learn/i5-templates/`](../learn/i5-templates/)
-- **Voltar ao início:** [`../README.md`](../README.md)
+- **Roadmap geral:** [`roadmap_geral.md`](../docs/roadmaps/roadmap_geral.md)
+- **Referências:** [`REFERENCIAS.md`](../docs/referencias/REFERENCIAS.md)
+- **Projetos multi-MCU:** [`projetos-integrados/`](../projetos-integrados/)
+- **Templates:** [`templates/`](../docs/templates/)
+- **Voltar:** [`README.md`](../README.md)
 
 ---
 

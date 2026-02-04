@@ -32,7 +32,7 @@
 
 **Total Geral:** 3/80 exercícios (3.75%) | 0/17 projetos (0%)
 
-📍 **Ver detalhes:** [`learn/i3-diario-aprendizado/TRACKER.md`](learn/i3-diario-aprendizado/TRACKER.md)
+📍 **Ver detalhes:** [`tracker.md`](docs/i3-diario-de-aprendizado/tracker.md)
 
 ---
 
@@ -40,8 +40,8 @@
 
 **Nunca programou microcontroladores?** Siga estes passos:
 
-1. 🗺️ Consulte [`learn/roadmap_geral.md`](learn/roadmap_geral.md) para o plano completo
-2. ⚙️ Configure seu ambiente em [`learn/i2-ferramentas/j1-configuracao-ambiente.md`](learn/i2-ferramentas/j1-configuracao-ambiente.md)
+1. 🗺️ Consulte [`roadmap_geral.md`](docs/roadmaps/roadmap_geral.md) para o plano completo
+2. ⚙️ Configure seu ambiente em [`j1-configuracao-ambiente.md`](docs/ferramentas/j1-configuracao-ambiente.md)
 3. 💡 Faça seu primeiro projeto em [`mcu/i0-arduino/j1-exercicios/nivel-1-basico/k1-blink_led/`](mcu/i0-arduino/j1-exercicios/nivel-1-basico/k1-blink_led/)
 
 ## 📂 Estrutura do Repositório
@@ -50,36 +50,27 @@
 mc_journey_attempt/
 │
 ├── README.md                   # 👈 Você está aqui (apresentação + índice)
-├── REFERENCIAS.md              # Referências gerais (livros, cursos, comunidades)
 │
-├── learn/                      # 📚 Documentação de aprendizado
-│   ├── README.md              # Navegação da pasta learn/
-│   ├── roadmap_geral.md       # Roadmap completo (40-50 semanas)
-│   ├── i1-conceitos-fundamentais/  # GPIO, PWM, I2C, SPI, etc
-│   ├── i2-ferramentas/        # Setup, datasheets, debugging
-│   ├── i3-diario-aprendizado/ # Diário pessoal de progresso
-│   ├── i4-referencias/        # Referências organizadas por tipo
-│   └── i5-templates/          # Templates para exercícios/projetos
+├── docs/                        # 📚 Documentação de aprendizado
+│   ├── README.md                # Navegação da pasta learn/
+│   ├── roadmaps/                # Roadmaps completos (40-50 semanas)
+│   ├── conceitos-fundamentais/  # GPIO, PWM, I2C, SPI, etc
+│   ├── ferramentas/             # Setup, datasheets, debugging
+│   ├── diario-aprendizado/      # Diário pessoal de progresso
+│   ├── templates/               # Templates para exercícios/projetos
+│   └── referencias/             # Referências organizadas por tipo
 │
-├── mcu/                       # 💻 Código para cada microcontrolador
-│   ├── README.md             # Navegação e ordem de estudo
-│   ├── details.md            # Referências completas sobre MCUs
-│   ├── i0-arduino/           # Arduino (relembrar básicos)
-│   ├── i1-esp32/             # ESP32 (WiFi/Bluetooth)
-│   ├── i2-rp2040-a/          # RP2040 (PIO, dual-core)
-│   ├── i3-rp2040-zero/       # RP2040 Zero (compacto)
-│   └── i4-stm8/              # STM8 (bare metal)
+├── mcu/                         # 💻 Código para cada microcontrolador
+│   ├── README.md                # Navegação e ordem de estudo
+│   ├── i0-arduino/              # Arduino (relembrar básicos)
+│   ├── i1-esp32/                # ESP32 (WiFi/Bluetooth)
+│   ├── i2-rp2040-a/             # RP2040 (PIO, dual-core)
+│   ├── i3-rp2040-zero/          # RP2040 Zero (compacto)
+│   └── i4-stm8/                 # STM8 (bare metal)
 │
-├── docs/                      # 🌐 Site estático (documentação web)
-│   └── README.md
-│
-├── projetos-integrados/       # 🔗 Projetos multi-MCU
-│   └── README.md
-│
-└── .meta/                     # Arquivos de desenvolvimento
-    ├── README.md
-    ├── notas-estrutura.md    # Decisões de organização
-    └── prompt/               # Histórico de prompts
+└── projetos-integrados/        # 🔗 Projetos multi-MCU
+    └── README.md 
+
 ```
 
 ## 📖 Sistema de Navegação
@@ -96,7 +87,7 @@ Cada pasta contém um arquivo `README.md` com:
 - **Pastas principais:** prefixo `iN-` (i0, i1, i2, ...) para índice de diretórios
 - **Arquivos:** prefixo `jN-` (j1, j2, j3, ...) para arquivos dentro de `iN/`
 - **Subpastas de exercícios:** prefixo `kN-` (k1, k2, k3, ...) para pastas dentro de exercícios
-- **Datas:** formato ISO `YYYY-MM-DD` (ex: `j1-2025-12-25.md`)
+- **Datas:** formato ISO `dia-YYYY-MM-DD` (ex: `dia-2025-12-25.md`)
 
 ## 📚 Sobre o Projeto
 
@@ -119,13 +110,10 @@ Este é um repositório de aprendizado pessoal que documenta minha jornada estud
 
 O repositório está organizado em:
 
-- **`learn/`** - Documentação teórica, roadmap, diário de aprendizado
+- **`docs/`** - Documentação teórica, roadmap, diário de aprendizado
 - **`mcu/`** - Código e projetos para cada microcontrolador (Arduino, ESP32, RP2040, STM8)
-- **`docs/`** - Site estático com documentação web
 - **`projetos-integrados/`** - Projetos que usam múltiplos MCUs
 - **`.meta/`** - Arquivos de desenvolvimento e organização
-
-5. **Criar** projetos reais (robótica, wearables, IoT, etc)
 
 ## 🛠️ Hardware Disponível
 
@@ -139,14 +127,13 @@ O repositório está organizado em:
 
 | Recurso | Link |
 |---------|------|
-| 🗺️ Roadmap Completo | [`learn/roadmap_geral.md`](learn/roadmap_geral.md) |
-| 📚 Referências | [`REFERENCIAS.md`](REFERENCIAS.md) |
-| 📝 Templates | [`learn/i5-templates/j1-templates.md`](learn/i5-templates/j1-templates.md) |
+| 🗺️ Roadmap Completo | [`roadmap_geral.md`](docs/roadmaps/roadmap_geral.md) |
+| 📚 Referências | [`REFERENCIAS.md`](docs/referencias/REFERENCIAS.md) |
+| 📝 Templates | [`i5-templates/j1-templates.md`](i5-templates/j1-templates.md) |
 | 💻 Primeiro Exercício | [`mcu/i0-arduino/.../k1-blink_led/`](mcu/i0-arduino/j1-exercicios/nivel-1-basico/k1-blink_led/) |
-| 📊 Diário de Progresso | [`learn/i3-diario-aprendizado/`](learn/i3-diario-aprendizado/) |
-| 📖 Aprendizado | [`learn/`](learn/) |
+| 📊 Diário de Progresso | [`diario-de-aprendizado/`](docs/diario-de-aprendizado/) |
+| 📖 Aprendizado | [`docs/`](docs/) |
 | 💻 Microcontroladores | [`mcu/`](mcu/) |
-| 🌐 Site Web | [`docs/`](docs/) |
 | 🔗 Projetos Integrados | [`projetos-integrados/`](projetos-integrados/) |
 
 ## 📈 Progresso
@@ -155,7 +142,7 @@ O repositório está organizado em:
 - 🔄 Fase 1: Fundamentos com Arduino/ESP32
 - ⏳ Fase 2-6: Em planejamento
 
-Acompanhe o progresso detalhado em [`learn/i3-diario-aprendizado/`](learn/i3-diario-aprendizado/)
+Acompanhe o progresso detalhado em [`diario-de-aprendizado/`](docs/diario-de-aprendizado/)
 
 ## 🤝 Contribuições
 
@@ -164,6 +151,6 @@ Este é um repositório de aprendizado pessoal, mas sugestões e correções sã
 ---
 
 **Autor:** [@gatilhoroxo](https://github.com/gatilhoroxo)  
-**Última atualização:** 2025-12-25
+**Última atualização:** 2026-02-04
 
 
