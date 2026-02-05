@@ -25,6 +25,7 @@ typedef struct {
     const char *task_name;
 } task_param_hard_t;
 
+// soluções do exercício 1
 void easy(void *pvParameters);
 void medium(void *pvParameters);
 void hard(void *pvParameters);
