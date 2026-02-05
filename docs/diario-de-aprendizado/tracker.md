@@ -15,7 +15,7 @@ Acompanhamento detalhado do progresso em cada microcontrolador.
 | MCU | Exercícios | Projetos | Progresso | Status |
 |-----|-----------|----------|-----------|--------|
 | **Arduino** | 3/15 | 0/3 | ██░░░░░░░░ 20% | 🔴 De Lado |
-| **ESP32** | 0/20 | 0/5 | █░░░░░░░░░ 0% | 🟡 Iniciado |
+| **ESP32** | 2/20 | 0/5 | █░░░░░░░░░ 0% | 🟡 Iniciado |
 | **RP2040-A** | 0/18 | 0/4 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
 | **RP2040 Zero** | 0/12 | 0/3 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
 | **STM8** | 0/15 | 0/2 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |

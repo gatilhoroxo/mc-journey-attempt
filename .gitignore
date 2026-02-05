@@ -1,11 +1,5 @@
-# Gem files generated
-Gemfile.lock
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-vendor/
-
+# vscode stuff
+.vscode
 
 # Build artifacts
 *.o
@@ -81,10 +75,6 @@ Thumbs.db
 node_modules/
 vendor/
 
-# Documentation builds
-docs/_build/
-site/
-
 # Environment
 .env
 .venv
@@ -105,5 +95,3 @@ ENV/
 *.gcda
 *.gcno
 
-# Generated files (keep templates)
-!learn/i5-templates/*.md
