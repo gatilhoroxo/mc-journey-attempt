@@ -5,9 +5,7 @@ description: Lista de alguns livros usados para compor o conhecimento deste repo
 
 # 📚 LIVROS
 
-## Livros Fundamentais
-
-### Conceitos Fundamentais
+## Conceitos Fundamentais
 
 - **"Making Embedded Systems"** - Elecia White
   - Excelente para conceitos gerais de sistemas embarcados
@@ -21,15 +19,22 @@ description: Lista de alguns livros usados para compor o conhecimento deste repo
 - **"Embedded C Coding Standard"** - Michael Barr
   - Boas práticas de programação embarcada
   - Código seguro e confiável
+  - Gratuito no site do autor
+
+- **"Designing Embedded Hardware"** - John Catsoulis
+  - Foco em Integração HW/SW
+  - Nível Intermediário
+  - **Onde:** O'Reilly
+
+- **"Programming Embedded Systems"** - Barr & Massa
+  - Foco em RTOS, drivers, protocolos
+  - Nível Intermediário a Avançado
+  - **Onde:** O'Reilly
 
 ---
 
-## Livros sobre os Microcontrolares
+## Livros sobre Ferramentas
 
-### Arduino Específico
-
-- **"Arduino Cookbook"** - Michael Margolis
-- **"Programming Arduino"** - Simon Monk
-- **"Exploring Arduino"** - Jeremy Blum
+- [FreeRTOS Kernel Book](https://www.freertos.org/Documentation/RTOS_book.html)
 
 ---

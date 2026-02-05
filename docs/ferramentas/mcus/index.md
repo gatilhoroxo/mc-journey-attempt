@@ -1,7 +1,8 @@
 ---
-title: Microcontroladores - Especificações Técnicas
+title: Microcontroladores
+description: Documentação técnica e especificações dos microcontroladores utilizados neste projeto de aprendizado.
 ---
 
-# 🔧 Microcontroladores - Especificações Técnicas
+# 🔧 Microcontroladores
 
 Documentação técnica e especificações dos microcontroladores utilizados neste projeto de aprendizado.

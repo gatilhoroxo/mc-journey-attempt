@@ -21,4 +21,6 @@ O **Arduino** é uma plataforma de prototipagem eletrônica **open-source** base
 ## 📚 Recursos
 
 - [Documentação Oficial Arduino](https://docs.arduino.cc/)
-
+- **"Arduino Cookbook"** - Michael Margolis
+- **"Programming Arduino"** - Simon Monk
+- **"Exploring Arduino"** - Jeremy Blum
