@@ -6,7 +6,7 @@ title: Tracker de Progresso
 
 Acompanhamento detalhado do progresso em cada microcontrolador.
 
-**Última atualização:** 2025-12-26
+**Última atualização:** 2026-02-05
 
 ---
 
@@ -14,8 +14,8 @@ Acompanhamento detalhado do progresso em cada microcontrolador.
 
 | MCU | Exercícios | Projetos | Progresso | Status |
 |-----|-----------|----------|-----------|--------|
-| **Arduino** | 3/15 | 0/3 | ████░░░░░░ 20% | 🟡 Em andamento |
-| **ESP32** | 0/20 | 0/5 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
+| **Arduino** | 3/15 | 0/3 | ██░░░░░░░░ 20% | 🔴 De Lado |
+| **ESP32** | 0/20 | 0/5 | ░░░░░░░░░░ 0% | 🟡 Iniciado |
 | **RP2040-A** | 0/18 | 0/4 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
 | **RP2040 Zero** | 0/12 | 0/3 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
 | **STM8** | 0/15 | 0/2 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
