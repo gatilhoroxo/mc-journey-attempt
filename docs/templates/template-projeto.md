@@ -6,6 +6,19 @@ title: Template de Projeto
 
 [Descrição resumida do projeto e seu propósito]
 
+**Autor:** [@gatilhoroxo](https://github.com/gatilhoroxo)  
+**Data de criação:** YYYY-MM-DD  
+**Nível de dificuldade:** ⭐⭐⭐ (1-5 estrelas)  
+**Tempo estimado:** XX horas
+
+---
+
+## 📊 Status do Projeto
+
+- **Versão:** 1.0.0
+- **Status:** 🟡 Em desenvolvimento / 🟢 Funcional / 🔴 Experimental
+- **Última atualização:** YYYY-MM-DD
+
 ---
 
 ## 📑 Índice
@@ -216,12 +229,6 @@ cd projeto-nome
 
 ---
 
-## 📊 Status do Projeto
-
-- **Versão:** 1.0.0
-- **Status:** 🟡 Em desenvolvimento / 🟢 Funcional / 🔴 Experimental
-- **Última atualização:** YYYY-MM-DD
-
 ## 📖 Referências
 
 - [Documentação técnica relevante]
@@ -238,7 +245,3 @@ MIT License / Open Source Hardware
 
 ---
 
-**Autor:** [@gatilhoroxo](https://github.com/gatilhoroxo)  
-**Data de criação:** YYYY-MM-DD  
-**Nível de dificuldade:** ⭐⭐⭐ (1-5 estrelas)  
-**Tempo estimado:** XX horas
