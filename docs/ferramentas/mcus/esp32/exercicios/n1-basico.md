@@ -135,6 +135,7 @@ void app_main(void)
 <summary>Código Básico pro Exercício</summary>
 
 ```c
+
 #define LED_PIN GPIO_NUM_2
 #define BUTTON_PIN GPIO_NUM_0  // Boot button
 
@@ -161,6 +162,7 @@ void app_main(void)
         vTaskDelay(10 / portTICK_PERIOD_MS);  // Pequeno delay
     }
 }
+
 ```
 
 </details>
