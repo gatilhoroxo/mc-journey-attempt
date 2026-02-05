@@ -24,15 +24,15 @@
 
 | MCU | Exercícios | Projetos | Progresso | Status |
 |-----|-----------|----------|-----------|--------|
-| **Arduino** | 3/15 | 0/3 | ████░░░░░░ 20% | 🟡 Em andamento |
-| **ESP32** | 0/20 | 0/5 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
+| **Arduino** | 3/15 | 0/3 | ██░░░░░░░░ 20% | 🔴 De Lado |
+| **ESP32** | 0/20 | 0/5 | █░░░░░░░░░ 10% | 🟡 Iniciado |
 | **RP2040-A** | 0/18 | 0/4 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
 | **RP2040 Zero** | 0/12 | 0/3 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
 | **STM8** | 0/15 | 0/2 | ░░░░░░░░░░ 0% | ⚪ Não iniciado |
 
 **Total Geral:** 3/80 exercícios (3.75%) | 0/17 projetos (0%)
 
-📍 **Ver detalhes:** [`tracker.md`](docs/i3-diario-de-aprendizado/tracker.md)
+📍 **Ver detalhes:** [`tracker.md`](docs/diario-de-aprendizado/tracker.md)
 
 ---
 
@@ -75,7 +75,7 @@ mc_journey_attempt/
 
 ## 📖 Sistema de Navegação
 
-Cada pasta contém um arquivo `README.md` com:
+Cada pasta contém um arquivo `README.md` ou `index.md` com:
 - **Índice/navegação** no topo
 - Descrição do conteúdo
 - Estrutura interna
@@ -113,7 +113,6 @@ O repositório está organizado em:
 - **`docs/`** - Documentação teórica, roadmap, diário de aprendizado
 - **`mcu/`** - Código e projetos para cada microcontrolador (Arduino, ESP32, RP2040, STM8)
 - **`projetos-integrados/`** - Projetos que usam múltiplos MCUs
-- **`.meta/`** - Arquivos de desenvolvimento e organização
 
 ## 🛠️ Hardware Disponível
 
@@ -128,13 +127,13 @@ O repositório está organizado em:
 | Recurso | Link |
 |---------|------|
 | 🗺️ Roadmap Completo | [`roadmap_geral.md`](docs/roadmaps/roadmap_geral.md) |
-| 📚 Referências | [`REFERENCIAS.md`](docs/referencias/REFERENCIAS.md) |
-| 📝 Templates | [`i5-templates/j1-templates.md`](i5-templates/j1-templates.md) |
-| 💻 Primeiro Exercício | [`mcu/i0-arduino/.../k1-blink_led/`](mcu/i0-arduino/j1-exercicios/nivel-1-basico/k1-blink_led/) |
-| 📊 Diário de Progresso | [`diario-de-aprendizado/`](docs/diario-de-aprendizado/) |
-| 📖 Aprendizado | [`docs/`](docs/) |
-| 💻 Microcontroladores | [`mcu/`](mcu/) |
-| 🔗 Projetos Integrados | [`projetos-integrados/`](projetos-integrados/) |
+| 📚 Referências | [`referencias/`](docs/referencias/index.md) |
+| 📝 Templates | [`templates.md`](docs/templates/index.md) |
+| 💻 Primeiro Exercício | [`blink_led/`](mcu/i0-arduino/j1-exercicios/nivel-1-basico/k1-blink_led/) |
+| 📊 Diário de Progresso | [`diario-de-aprendizado/`](docs/diario-de-aprendizado/index.md) |
+| 📖 Aprendizado | [`docs/`](docs/index.md) |
+| 💻 Microcontroladores | [`mcu/`](mcu/README.md) |
+| 🔗 Projetos Integrados | [`projetos-integrados/`](projetos-integrados/readme.md) |
 
 ## 📈 Progresso
 
