@@ -2,9 +2,9 @@
 title: Referencias Gerais
 ---
 
-## 📚 REFERÊNCIAS GERAIS
+# 📚 REFERÊNCIAS GERAIS
 
-### Livros Fundamentais
+## Livros Fundamentais
 
 1. **"Making Embedded Systems" - Elecia White**
    - Excelente para conceitos gerais
@@ -19,14 +19,7 @@ title: Referencias Gerais
    - Boas práticas
    - Código seguro e confiável
 
-### Documentação Oficial
-
-- **ESP32:** [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/latest/)
-- **RP2040:** [Raspberry Pi Pico C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)
-- **RP2040:** [RP2040 Datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
-- **STM8:** [STM8 Reference Manual](https://www.st.com/resource/en/reference_manual/cd00190271-stm8s-series-and-stm8af-series-8bit-microcontrollers-stmicroelectronics.pdf)
-
-### Cursos Online Recomendados
+## Cursos Online Recomendados
 
 1. **FastBit Embedded Brain Academy**
    - Cursos específicos de microcontroladores
@@ -39,21 +32,27 @@ title: Referencias Gerais
 3. **Shawn Hymel - Intro to RTOS**
    - Para quando chegar em sistemas mais complexos
 
-### Sites e Comunidades
+## Blogs e Comunidades
 
 - **Embarcados.com.br** - Comunidade brasileira
 - **EmbeddedArtistry.com** - Blog técnico excelente
 - **Interrupt by Memfault** - Blog técnico avançado
 - **r/embedded** - Reddit community
 
-### Ferramentas para Ler Datasheets
+---
 
-1. **Começar pela seção "Functional Description"**
-2. **Ir para "Register Description" quando programar**
-3. **"Electrical Characteristics" para limites**
-4. **Sempre ter em mãos:**
-   - Highlighter (marca páginas importantes)
-   - Caderno para anotações
-   - Desenhe diagramas de blocos
+## 📝 Como Ler Datasheets
+
+### Estratégia de Leitura
+1. **Começar pela seção "Functional Description"** - Entender o que o componente faz
+2. **Ir para "Register Description"** quando for programar - Detalhes de configuração
+3. **"Electrical Characteristics"** para limites - Tensões, correntes, timing
+4. **"Pin Description"** - Função de cada pino
+
+### Dicas
+- ✅ Sempre tenha highlighter para marcar partes importantes
+- ✅ Mantenha um caderno para anotações e diagramas
+- ✅ Desenhe diagramas de blocos para visualizar
+- ✅ Leia múltiplas vezes - a primeira é sempre difícil
 
 ---
