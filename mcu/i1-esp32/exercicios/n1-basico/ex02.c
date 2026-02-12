@@ -3,11 +3,18 @@
 #include "freertos/task.h"
 #include "esp_log.h"
 
-/* funções */
+/* funções para GPIO Basico*/
+
+/*código disponibilizado*/
 void base();
+/* inverter lógica */
 void ease();
+/* toggle led */
 void medium();
+/* contar quantas vezes o botão foi pressionado e mostrar no serial */
 void hard();
+
+/* ====================== IMPLEMENTAÇÃO ====================== */
 
 #define LED_PIN GPIO_NUM_2 // Led interno
 #define BUTTON_PIN GPIO_NUM_0  // Boot button
@@ -38,7 +45,9 @@ void base(void)
     }
 }
 
-/* inverter lógica */
+
+/* ====================== DESAFIOS ====================== */
+
 // ele não desliga completamente apenas diminui a intensidade quando eu aperto o botão
 /*Motivo: o led interno da esp32 é ligado ao gpio2 que pode ter outros circuitos conectados internamente, o que pode acabar deixando uma corrente residual e não fazendo ele apagar por completo.*/
 void ease(){
@@ -63,7 +72,6 @@ void ease(){
     }
 }
 
-/* toggle led */
 //melhor fazer uma mini máquina de estados aqui
 void medium(){
     gpio_reset_pin(LED_PIN);
@@ -118,5 +126,5 @@ void medium(){
 
 }
 
-/* contar quantas vezes o botão foi pressionado e mostrar no serial */
+//
 void hard(){}

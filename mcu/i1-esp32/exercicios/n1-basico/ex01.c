@@ -3,6 +3,36 @@
 #include "freertos/task.h"
 #include "esp_log.h"
 
+/* funções para GPIO Basico*/
+/* codigo disponibilizado */
+void base();
+/* piscar mais rápido e alternado com outro led */
+void easy2(void *pvParameters);
+/* criar padrão S.0.S. em morse */
+void medium2(void *pvParameters);
+/* usar 3 leds alternados para um efeito de "corrida"*/
+void hard2(void *pvParameters);
+/* os três anteriores ao mesmo tempo */
+void extra();
+
+
+/* ====================== IMPLEMENTAÇÃO ====================== */
+
+
+#define LED_PIN GPIO_NUM_2  // LED interno
+void base(){
+    // Configurar pino como saída
+    gpio_reset_pin(LED_PIN);
+    gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
+    
+    while(1) {
+        gpio_set_level(LED_PIN, 1);  // Liga
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        gpio_set_level(LED_PIN, 0);  // Desliga
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+    }
+}
+
 static const char *TAG = "LED_EXERCISES";
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
@@ -25,10 +55,6 @@ typedef struct {
     const char *task_name;
 } task_param_hard_t;
 
-// soluções do exercício 1
-void easy(void *pvParameters);
-void medium(void *pvParameters);
-void hard(void *pvParameters);
 
 void extra(){
     static task_param_ease_t p_ease = {
@@ -49,9 +75,9 @@ void extra(){
         .task_name = "Hard Task"
     };
 
-    xTaskCreate(easy, "easy task", 2048, &p_ease, 5, NULL);
-    xTaskCreate(medium, "medium task", 2048, &p_medium, 5, NULL);
-    xTaskCreate(hard, "hard task", 2048, &p_hard, 5, NULL);
+    xTaskCreate(easy2, "easy2 task", 2048, &p_ease, 5, NULL);
+    xTaskCreate(medium2, "medium2 task", 2048, &p_medium, 5, NULL);
+    xTaskCreate(hard2, "hard2 task", 2048, &p_hard, 5, NULL);
 
 }
 
@@ -83,11 +109,11 @@ void morse_S(gpio_num_t gpio);
 void morse_O(gpio_num_t gpio);
 void morse_SOS(gpio_num_t gpio);
 
-/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
-// Exercícios
-/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/* ====================== DESAFIOS ====================== */
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-void easy(void *pvParameters) {
+void easy2(void *pvParameters) {
     ESP_LOGI(TAG, "Iniciando: EASY - Blink alternado");
 
     task_param_ease_t *p = (task_param_ease_t *)pvParameters;
@@ -109,7 +135,7 @@ void easy(void *pvParameters) {
     }
 }
 
-void medium(void *pvParameters) {
+void medium2(void *pvParameters) {
     ESP_LOGI(TAG, "Iniciando: MEDIUM - Morse SOS");
     
     task_param_medium_t *p = (task_param_medium_t *)pvParameters;
@@ -124,7 +150,7 @@ void medium(void *pvParameters) {
     }
 }
 
-void hard(void *pvParameters) {
+void hard2(void *pvParameters) {
     ESP_LOGI(TAG, "Iniciando: HARD - Semáforo");
 
     task_param_hard_t *p = (task_param_hard_t *)pvParameters;
