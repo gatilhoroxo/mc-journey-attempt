@@ -1276,9 +1276,9 @@ Você agora domina:
 **Próximas Jornadas:**
 
 **1. Microcontroladores Alternativos:**
-🔼 **[RP2040](../../i2-rp2040-a/README.md)** - PIO, dual-core ARM Cortex-M0+
+🔼 **[RP2040]** - PIO, dual-core ARM Cortex-M0+
 
-🔼 **[STM8](../../i4-stm8/README.md)** - Bare-metal, registradores, baixo nível
+🔼 **[STM8]** - Bare-metal, registradores, baixo nível
 
 **2. Especialização ESP32:**
 - **ESP-NOW:** Comunicação P2P sem WiFi
@@ -1312,11 +1312,6 @@ Você agora domina:
 - [ESP32.com Forum](https://esp32.com)
 - [Reddit r/esp32](https://reddit.com/r/esp32)
 - [Discord ESP32](https://discord.gg/espressif)
-
-**Voltar:**
-- 🏠 [README Principal ESP32](../../README.md)
-- 📚 [Roadmap Geral](../../../../learn/roadmap_geral.md)
-- 📝 [Nível 2 - Intermediário](../nivel-2-intermediario/info-intermediario.md)
 
 ---
 

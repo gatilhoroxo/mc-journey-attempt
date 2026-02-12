@@ -675,6 +675,12 @@ void app_main(void)
 
 </details>
 
+**Desafios:**
+1. 🟢 **Fácil:** exibir os dígitos de 0 a 9 ao pressionar um botão (incrementa a cada clique)
+2. 🟡 **Médio:** contar de 0 a 9 e depois de 9 para 0, alternando a cada ciclo
+3. 🔴 **Difícil:** exibir um contador controlado por dois botoes: um incrementa e outro decrementa
+
+
 ---
 
 ## 🎯 Projeto Final: Semáforo Inteligente
@@ -739,10 +745,6 @@ VERDE (10s) --> AMARELO (3s) --> VERMELHO (10s) --> [loop]
 <summary>Template Básico pro Projeto</summary>
 
 ```c
-#include "driver/gpio.h"
-#include "driver/ledc.h"
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
 
 typedef enum {
     STATE_GREEN,
@@ -757,20 +759,9 @@ typedef struct {
     bool pedestrian_requested;
 } traffic_system_t;
 
-void setup_leds(void) {
-    gpio_reset_pin(LED_RED);
-    gpio_reset_pin(LED_YELLOW);
-    gpio_reset_pin(LED_GREEN);
-    gpio_set_direction(LED_RED, GPIO_MODE_OUTPUT);
-    gpio_set_direction(LED_YELLOW, GPIO_MODE_OUTPUT);
-    gpio_set_direction(LED_GREEN, GPIO_MODE_OUTPUT);
-}
+void setup_leds(void);
 
-void setup_button(void) {
-    gpio_reset_pin(BTN_PEDESTRIAN);
-    gpio_set_direction(BTN_PEDESTRIAN, GPIO_MODE_INPUT);
-    gpio_set_pull_mode(BTN_PEDESTRIAN, GPIO_PULLUP_ONLY);
-}
+void setup_button(void);
 
 void setup_display(void) {
     // Configurar pinos do display 7seg
@@ -783,23 +774,7 @@ void setup_buzzer(void) {
 }
 
 void set_traffic_light(traffic_state_t state) {
-    // Apagar todos os LEDs
-    gpio_set_level(LED_RED, 0);
-    gpio_set_level(LED_YELLOW, 0);
-    gpio_set_level(LED_GREEN, 0);
-    
-    // Acender LED correspondente
-    switch(state) {
-        case STATE_GREEN:
-            gpio_set_level(LED_GREEN, 1);
-            break;
-        case STATE_YELLOW:
-            gpio_set_level(LED_YELLOW, 1);
-            break;
-        case STATE_RED:
-            gpio_set_level(LED_RED, 1);
-            break;
-    }
+    // Configurar os leds para seguirem o padrão de acordo com os estados
 }
 
 void play_beep(void) {
@@ -827,59 +802,12 @@ void traffic_light_task(void *pvParameters) {
     
     while(1) {
         // Verificar botão pedestre
-        if(read_pedestrian_button() && gpio_get_level(BTN_PEDESTRIAN) == 0) {
-            system.pedestrian_requested = true;
-        }
         
         // Exibir tempo no display
-        display_number(system.time_remaining);
         
         // Lógica da máquina de estados
-        switch(system.current_state) {
-            case STATE_GREEN:
-                set_traffic_light(STATE_GREEN);
-                
-                // Piscar LED verde nos últimos 3 segundos
-                if(system.time_remaining <= 3) {
-                    gpio_set_level(LED_GREEN, system.time_remaining % 2);
-                }
-                
-                if(system.time_remaining <= 0) {
-                    system.current_state = STATE_YELLOW;
-                    system.time_remaining = 3;
-                    play_beep();
-                }
-                break;
-                
-            case STATE_YELLOW:
-                set_traffic_light(STATE_YELLOW);
-                
-                if(system.time_remaining <= 0) {
-                    system.current_state = STATE_RED;
-                    system.time_remaining = 10;
-                    play_beep();
-                }
-                break;
-                
-            case STATE_RED:
-                set_traffic_light(STATE_RED);
-                
-                // Se pedestre solicitou, dar mais tempo
-                if(system.pedestrian_requested && system.time_remaining > 5) {
-                    system.time_remaining = 15;  // Extende tempo vermelho
-                    system.pedestrian_requested = false;
-                }
-                
-                if(system.time_remaining <= 0) {
-                    system.current_state = STATE_GREEN;
-                    system.time_remaining = 10;
-                    play_beep();
-                }
-                break;
-        }
-        
-        system.time_remaining--;
-        vTaskDelay(1000 / portTICK_PERIOD_MS);  // 1 segundo
+            // Piscar LED verde nos últimos 3 segundos 
+            // Se pedestre solicitou o vermelho, dar mais tempo
     }
 }
 
@@ -1002,7 +930,7 @@ Você agora domina:
 - ✅ Capacidade de ler datasheets e documentação
 
 **Próximo Nível:**
-🔼 **[Nível 2 - Intermediário](../nivel-2-intermediario/info-intermediario.md)**
+🔼 **[Nível 2 - Intermediário]**
 
 O que você vai aprender:
 - Interrupções (ISR) e eventos
@@ -1021,11 +949,6 @@ O que você vai aprender:
 **Recursos de Referência:**
 - 📖 [ESP32 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf)
 - 📺 [Canal Brincando com Ideias](https://www.youtube.com/@BrincandocomIdeias)
-- 💻 [ESP32 Pinout Reference](../../pin-diagrams/esp32-devkit-v1.md)
-
-**Voltar:**
-- 🏠 [README Principal ESP32](../../README.md)
-- 📚 [Roadmap Geral](../../../../learn/roadmap_geral.md)
 
 ---
 
